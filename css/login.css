@@ -1,0 +1,25 @@
+form {
+    /* border: 1px solid #ffffff; */
+    padding: 50px 60px;
+    color: #ffffff;
+    margin-top: 20vh;
+    -webkit-box-shadow: -4px 4px 10px 6px rgba(179,175,179,0.75);
+    -moz-box-shadow: -4px 4px 10px 6px rgba(179,175,179,0.75);
+    box-shadow: -4px 4px 10px 6px rgba(179,175,179,0.75);
+}
+
+
+.bg {
+    background: url('../img/bgimage.jpg') no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.change, #emailhelp {
+    color: #ffffff;
+}
+
+.span:hover {
+    color: blue;
+    text-decoration: underline;
+}

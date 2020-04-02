@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login to Greeny</title>
+
+    <!-- Twitter BootStrap CSS and JS links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/login.css">
+    <!-- Favicon link -->
+    <link rel="icon"
+        href="https://firebasestorage.googleapis.com/v0/b/socialmedia-af41d.appspot.com/o/greenparot.jpg?alt=media&token=304f38d8-abfc-45d3-b479-2b35ab74c268">
+</head>
+
+<body>
+    <div class="container-fluid bg">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12"></div>
+            <div class="col-md-4 col-sm-4 col-xs-12" id="forminsert">
+                <!-- Login Or Sign Up form will be displayed here -->
+            </div>
+        </div>
+    </div>
+    <div id="formlogin" style="display: none;">
+        <form class="form-container">
+            <div class="form-group">
+                <label for="exampleInputEmail1"><b>Email address</b></label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1"><b>Password</b></label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+            </div>
+            <input type="button" id="loginbtn" class="btn btn-block btn-success" value="Login" onclick="loginfunc()">
+            <p class="change">Don't have an account yet? <span class="span" onclick="signupinsertfunc()"><b>Sign
+                        Up!</b></span>
+            </p>
+        </form>
+    </div>
+    <div id="formsignup" style="display: none;">
+        <form class="form-container">
+            <div class="form-group">
+                <label for="usernamesignup"><b>User Name</b></label>
+                <input type="text" class="form-control" id="usernamesignup" placeholder="Enter User Name">
+            </div>
+            <div class="form-group">
+                <label for="emailsignup"><b>Email address</b></label>
+                <input type="email" class="form-control" id="emailsignup" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="passwordsignup"><b>Password</b></label>
+                <input type="password" class="form-control" id="passwordsignup" placeholder="Password">
+            </div>
+            <input type="button" id="loginbtnsignup" class="btn btn-block btn-success" value="Sign Up"
+                onclick="signupfunc()">
+            <p class="change">Already have an account?<span class="span"
+                    onclick="logininsertfunc()"><b>Login!</b></span></p>
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // You must enter the following firebaseConfig that you get from Firebase for this to work
+
+        // var firebaseConfig = {
+        //   apiKey: "INSERT YOUR API KEY HERE",
+        //   authDomain: "INSERT YOUR DOMAIN HERE",
+        //   databaseURL: "INSERT YOUR DOMAIN HERE",
+        //   projectId: "YOUR PROJECT ID",
+        //   storageBucket: "YOIUR STORAGEBUCKET",
+        //   messagingSenderId: "YOUR ID",
+        //   appId: "YOUR APPID",
+        //   measurementId: "YOUR MEASUREMENID"
+        // };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <!-- Custom JS -->
+    <script src="js/login.js"></script>
+</body>
+
+</html>

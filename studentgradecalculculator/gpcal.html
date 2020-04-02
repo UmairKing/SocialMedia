@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="whole">
+        <h2>Enter Your grades below to calculate GPA!</h2>
+        <br>
+        <form>
+            <h1>Theory Grades</h1>
+            <span>OOP: </span>
+            <select id="oop">
+                <option id="oop1" value="1">A+</option>
+                <option id="oop2" value="2">A</option>
+                <option id="oop3" value="3">A-</option>
+                <option id="oop4" value="4">B+</option>
+                <option id="oop5" value="5">B</option>
+                <option id="oop6" value="6">B-</option>
+                <option id="oop7" value="7">C+</option>
+                <option id="oop8" value="8">C</option>
+                <option id="oop9" value="9">C-</option>
+                <option id="oop11" value="11">D</option>
+                <option id="oop13" value="13">F</option>
+            </select><br><br>
+            <span>DLD: </span>
+            <select id="dld">
+                <option id="dld1" value="1">A+</option>
+                <option id="dld2" value="2">A</option>
+                <option id="dld3" value="3">A-</option>
+                <option id="dld4" value="4">B+</option>
+                <option id="dld5" value="5">B</option>
+                <option id="dld6" value="6">B-</option>
+                <option id="dld7" value="7">C+</option>
+                <option id="dld8" value="8">C</option>
+                <option id="dld9" value="9">C-</option>
+                <option id="dld11" value="11">D</option>
+                <option id="dld13" value="13">F</option>
+            </select><br><br>
+            <span>Communication Skills: </span>
+            <select id="cs">
+                <option id="cs1" value="1">A+</option>
+                <option id="cs2" value="2">A</option>
+                <option id="cs3" value="3">A-</option>
+                <option id="cs4" value="4">B+</option>
+                <option id="cs5" value="5">B</option>
+                <option id="cs6" value="6">B-</option>
+                <option id="cs7" value="7">C+</option>
+                <option id="cs8" value="8">C</option>
+                <option id="cs9" value="9">C-</option>
+                <option id="cs11" value="11">D</option>
+                <option id="cs13" value="13">F</option>
+            </select><br><br>
+            <span>DIP: </span>
+            <select id="dip">
+                <option id="dip1" value="1">A+</option>
+                <option id="dip2" value="2">A</option>
+                <option id="dip3" value="3">A-</option>
+                <option id="dip4" value="4">B+</option>
+                <option id="dip5" value="5">B</option>
+                <option id="dip6" value="6">B-</option>
+                <option id="dip7" value="7">C+</option>
+                <option id="dip8" value="8">C</option>
+                <option id="dip9" value="9">C-</option>
+                <option id="dip11" value="11">D</option>
+                <option id="dip13" value="13">F</option>
+            </select><br><br>
+            <span>Applied Physics: </span>
+            <select id="ap">
+                <option id="ap1" value="1">A+</option>
+                <option id="ap2" value="2">A</option>
+                <option id="ap3" value="3">A-</option>
+                <option id="ap4" value="4">B+</option>
+                <option id="ap5" value="5">B</option>
+                <option id="ap6" value="6">B-</option>
+                <option id="ap7" value="7">C+</option>
+                <option id="ap8" value="8">C</option>
+                <option id="ap9" value="9">C-</option>
+                <option id="ap11" value="11">D</option>
+                <option id="ap13" value="13">F</option>
+            </select><br><br>
+            <span>Differential Equation: </span>
+            <select id="de">
+                <option id="de1" value="1">A+</option>
+                <option id="de2" value="2">A</option>
+                <option id="de3" value="3">A-</option>
+                <option id="de4" value="4">B+</option>
+                <option id="de5" value="5">B</option>
+                <option id="de6" value="6">B-</option>
+                <option id="de7" value="7">C+</option>
+                <option id="de8" value="8">C</option>
+                <option id="de9" value="9">C-</option>
+                <option id="de11" value="11">D</option>
+                <option id="de13" value="13">F</option>
+            </select><br><br>
+            <h1>LAB Grades</h1>
+            <span>OOP: </span>
+            <select id="oopl">
+                <option id="oopl1" value="1">A+</option>
+                <option id="oopl2" value="2">A</option>
+                <option id="oopl3" value="3">A-</option>
+                <option id="oopl4" value="4">B+</option>
+                <option id="oopl5" value="5">B</option>
+                <option id="oopl6" value="6">B-</option>
+                <option id="oopl7" value="7">C+</option>
+                <option id="oopl8" value="8">C</option>
+                <option id="oopl9" value="9">C-</option>
+                <option id="oopl11" value="11">D</option>
+                <option id="oopl13" value="13">F</option>
+            </select><br><br>
+            <span>DLD: </span>
+            <select id="dldl">
+                <option id="dldl1" value="1">A+</option>
+                <option id="dldl2" value="2">A</option>
+                <option id="dldl3" value="3">A-</option>
+                <option id="dldl4" value="4">B+</option>
+                <option id="dldl5" value="5">B</option>
+                <option id="dldl6" value="6">B-</option>
+                <option id="dldl7" value="7">C+</option>
+                <option id="dldl8" value="8">C</option>
+                <option id="dldl9" value="9">C-</option>
+                <option id="dldl11" value="11">D</option>
+                <option id="dldl13" value="13">F</option>
+            </select><br><br>
+            <span>DIP: </span>
+            <select id="dipl">
+                <option id="dipl1" value="1">A+</option>
+                <option id="dipl2" value="2">A</option>
+                <option id="dipl3" value="3">A-</option>
+                <option id="dipl4" value="4">B+</option>
+                <option id="dipl5" value="5">B</option>
+                <option id="dipl6" value="6">B-</option>
+                <option id="dipl7" value="7">C+</option>
+                <option id="dipl8" value="8">C</option>
+                <option id="dipl9" value="9">C-</option>
+                <option id="dipl11" value="11">D</option>
+                <option id="dipl13" value="13">F</option>
+            </select><br><br>
+            <span>Applied Physics: </span>
+            <select id="apl">
+                <option id="apl1" value="1">A+</option>
+                <option id="apl2" value="2">A</option>
+                <option id="apl3" value="3">A-</option>
+                <option id="apl4" value="4">B+</option>
+                <option id="apl5" value="5">B</option>
+                <option id="apl10" value="6">B-</option>
+                <option id="apl6" value="7">C+</option>
+                <option id="apl7" value="8">C</option>
+                <option id="apl8" value="9">C-</option>
+                <option id="apl11" value="11">D</option>
+                <option id="apl13" value="13">F</option>
+            </select><br><br>
+            <input type="button" id="btn" onclick=calcy(); value="Calculate">
+
+        </form>
+
+
+
+
+        <div id="result">
+        </div>
+
+
+
+    </div>
+    <script src="gpcalscript.js"></script>
+</body>
+
+</html>

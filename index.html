@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Greeny</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon"
+    href="https://firebasestorage.googleapis.com/v0/b/socialmedia-af41d.appspot.com/o/greenparot.jpg?alt=media&token=304f38d8-abfc-45d3-b479-2b35ab74c268">
+</head>
+
+<body>
+  <div id="supermaindiv">
+    <aside>
+      <div id="asidediv">
+        <div id="ppdiv">
+          <img id="profilepic">
+          <input type="file" accept="image/*" id="ppupdate" style="display: none;">
+          <label id="ppupdatemsg" for="ppupdate" style="cursor: pointer; color: white;">UPDATE!</label><br>
+        </div>
+        <h2 id="uname"></h2>
+        <h3 id="uemailid"></h3><br>
+        <h4>Posts: N/A</h4>
+        <h4>Followers: N/A</h4>
+        <h4>Follows: N/A</h4>
+      </div>
+      <div id="logoutdiv">
+        <button type="button" id="logout" onclick="logoutfunc()">Logout</button><br>
+      </div>
+      <button type="button" id="gpacal" onclick="gpfunc()">GPA Calculator!</button>
+      <div id="newusercontainer">
+      </div>
+    </aside>
+    <section id="mainsect">
+      <div id="maindiv">
+        <div id="getpost">
+          <h3>Wanna Post Something?</h3><br>
+          <input id="inputtext" placeholder="What's in your mind?"></input> <br><br>
+          <input type="file" accept=".jpg,.jpeg,.png,.gif,.mp4,.3gp,.ogg" id="imagepost" style="display: none;">
+          <label for="imagepost" style="cursor: pointer; color:yellow">INCLUDE IMAGE/VIDEO</label><br>
+          <input type="button" id="postinputbtn" value="Publish!" onclick="postcheck()">
+        </div>
+        <div id="postdiv">
+          <!-- Multiple divs will be inserted here as posts -->
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Firebase Script -->
+
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    // You must enter the following firebaseConfig that you get from Firebase for this to work
+
+    // var firebaseConfig = {
+    //   apiKey: "INSERT YOUR API KEY HERE",
+    //   authDomain: "INSERT YOUR DOMAIN HERE",
+    //   databaseURL: "INSERT YOUR DOMAIN HERE",
+    //   projectId: "YOUR PROJECT ID",
+    //   storageBucket: "YOIUR STORAGEBUCKET",
+    //   messagingSenderId: "YOUR ID",
+    //   appId: "YOUR APPID",
+    //   measurementId: "YOUR MEASUREMENID"
+    // };
+    // Initialize Firebase
+
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <!-- My Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script> -->
+
+<!-- Add additional services that you want to use -->
+<!-- <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script> -->
+<!-- <script src="https://www.gstatic.com/firebase/7.2.3/firebase-firestore.js"></script> -->
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<!-- <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script> -->
